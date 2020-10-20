@@ -3,9 +3,16 @@
 
 class Engenheiro : public Empregado {
 
-  public:
-    std::string nome;  
-	int projetos;
+  private:
+	  int projetos;
 	
+  public:
+    int get_projetos(){
+      return projetos;
+    }
+
+    void set_projetos(int p){
+      this->projetos = p;
+    }
 };
 
